@@ -1,0 +1,68 @@
+.WorkWindow {
+	flex-grow: 1;
+
+	&__bar {
+		width: 100%;
+		height: 44px;
+		background: #27272A;
+		border-bottom: 1px solid #414144;
+		border-left: 1px solid #414144;
+	}
+
+	&__openProjectName {
+		display: inline-block;
+		border-right: 1px solid #414144;
+		padding: 11px 15px;
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+
+		color: #FFFFFF;
+	}
+
+}
+
+.FolderExplorer {
+	width: 100%;
+	background: #202124;
+	min-height: 878px;
+	padding: 0px 10px;
+
+	&__topBar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 40px;
+
+		font-size: 14px;
+		line-height: 130%;
+		letter-spacing: 0.1px;
+		color: #A1A1AA;
+
+		border-bottom: 1px solid #414144;
+	}
+
+	&__topBar-left {
+		display: flex;
+
+		span {
+			display: block;
+			width: 135px;
+
+			&:last-child {
+				width: 200px;
+			}
+		}
+	}
+
+	&__topBar-right {
+		display: flex;
+
+		span {
+			display: block;
+			width: 200px;
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.FolderExplorer {
+	&__item {
+		position: relative;
+		display: flex;
+		height: 60px;
+		align-items: center;
+
+		.level {
+			width: 135px;
+		}
+
+		.nameOfWorks {
+			flex-grow: 1;
+		}
+
+		.salary,
+		.equipment,
+		.overheadCosts,
+		.estimatedProfit {
+			width: 200px;
+		}
+	}
+}
+
+.nameEdit {
+	padding: 0px 10px;
+	margin-right: 40px;
+	flex-grow: 1;
+	height: 36px;
+	background: #202124;
+	color: #71717A;
+	border: 1px solid #414144;
+	border-radius: 6px;
+}
+
+.levelIcons,
+.levelIconsEdit,
+.levelIcons1,
+.levelIconsEdit1,
+.levelIcons2,
+.levelIconsEdit2 {
+	display: flex;
+	width: max-content;
+	padding: 6px;
+	padding-right: 10px;
+	border-radius: 6px;
+	gap: 6px;
+
+	img {
+		display: inline-block;
+		z-index: 1;
+		position: relative;
+	}
+}
+
+.levelIcons1,
+.levelIconsEdit1 {
+	position: relative;
+	margin-left: 25px;
+}
+
+.levelIcons2,
+.levelIconsEdit2 {
+	position: relative;
+	margin-left: 45px;
+}
+
+.inheritanceMark,
+.inheritanceMarkFile {
+	position: absolute;
+	z-index: 0;
+	top: -30px;
+	left: 19px;
+	width: 16px;
+	height: 56px;
+	border-left: 1px solid #C6C6C6;
+	border-bottom: 1px solid #C6C6C6;
+}
+
+.inheritanceMarkFile {
+	left: 39px;
+}
+
+.levelIconsEdit,
+.levelIconsEdit1,
+.levelIconsEdit2 {
+	background: #414144;
+}

@@ -1,0 +1,63 @@
+.header {
+	width: 100%;
+	height: 44px;
+	background: #27272A;
+	padding: 13px 24px;
+	border-bottom: 1px solid #414144;
+	display: flex;
+
+	.btns {
+		display: flex;
+	}
+}
+
+.cube,
+.share {
+	margin-right: 27px;
+	cursor: pointer;
+}
+
+.links {
+	display: flex;
+
+	li {
+		margin-right: 28px;
+
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+
+	.activeLink {
+		color: #FFFFFF;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			content: ' ';
+			left: -5%;
+			top: 29px;
+			width: 110%;
+			height: 2px;
+			background: #FFFFFF;
+		}
+
+	}
+
+	.notActiveLink {
+		color: #A1A1AA;
+	}
+
+
+}
+
+.red {
+	color: red !important;
+}
